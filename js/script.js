@@ -88,14 +88,14 @@ function countryName(country_name) {
     .then((data) => data.json())
     .then((main_data) => {
       let [getDataStore] = main_data;
-      common_html(getDataStore);
+      countryInner(getDataStore);
     })
     .catch((error) => {
       console.log(error);
     });
 }
 
-function common_html(getDataStore) {
+function countryInner(getDataStore) {
   let country_info_main = document.querySelector(".country_info_main");
   let currency = Object.keys(getDataStore.currencies)[0];
 
