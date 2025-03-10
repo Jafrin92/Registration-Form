@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="register-form">
+      <h1>Registration Form</h1>
+      <form>
+        <div class="form-info">
+          <div class="info-name">
+            <input class="name" type="text" placeholder="Enter your name" />
+            <p class="name-err"></p>
+          </div>
+          <div class="info-mail">
+            <input class="email" type="email" placeholder="Enter your email" />
+            <p class="mail-err"></p>
+          </div>
+        </div>
+        <div class="register-pass">
+          <div>
+            <input
+              class="password"
+              type="password"
+              placeholder="Enter your password"
+            />
+            <p class="pass-err"></p>
+          </div>
+          <div>
+            <input
+              class="confirm-pass"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <p class="confirm-pass-err"></p>
+          </div>
+        </div>
+        <div class="country-main">
+          <div class="country-input">
+            <input
+              class="country-name"
+              type="text"
+              placeholder="Enter your Country"
+              class="country_name"
+              id="country_input"
+            />
+            <p class="country-name-err" class="contriy_error"></p>
+          </div>
+          <button class="find">Find</button>
+        </div>
+        <div class="country_info_main"></div>
+        <div class="register-button">
+          <button class="submit-button" type="submit">Submit Data</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
